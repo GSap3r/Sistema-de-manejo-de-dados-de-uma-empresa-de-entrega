@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_CENTER" spacing="8.0" xmlns="http://javafx.com/javafx/24.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafx.GerenciarPedidoController">
+  <children>
+    <Label text="Gerenciar Pedidos" />
+    <TableView fx:id="tvPedidos" prefHeight="300.0" prefWidth="700.0">
+      <columns>
+        <TableColumn fx:id="colId" text="ID" />
+        <TableColumn fx:id="colCliente" text="Cliente" />
+        <TableColumn fx:id="colData" text="Data" />
+        <TableColumn fx:id="colTotal" text="Total" />
+        <TableColumn fx:id="colAcoes" text="Ações" />
+      </columns>
+    </TableView>
+    <HBox alignment="CENTER" spacing="12.0">
+      <children>
+        <Button onAction="#onFechar" style="-fx-background-color: white; -fx-border-color: #C6490B;" text="Fechar" />
+        <Button onAction="#onAbrir" style="-fx-background-color: #C6490B;" text="Abrir" textFill="WHITE" />
+      </children>
+    </HBox>
+  </children>
+  <padding>
+    <Insets bottom="12" left="12" right="12" top="12" />
+  </padding>
+</VBox>
