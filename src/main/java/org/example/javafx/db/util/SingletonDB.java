@@ -7,10 +7,11 @@ public class SingletonDB {
     }
     public static boolean conectar(){
         conexao=new Conexao();
-        return conexao.conectar("jdbc:postgresql://localhost:5432/","MyDB","postgres","123123");
+        return conexao.conectar("jdbc:postgresql://localhost:5432/","MyDB","postgres","000000");
     }
 
     public static Conexao getConexao() {
         return conexao;
     }
 }
+
